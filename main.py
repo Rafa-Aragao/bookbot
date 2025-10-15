@@ -13,6 +13,7 @@ def main():
     character_count = num_characters(Frankenstein)
     character_dict = sort_dict(character_count)
     
+    
     print("============ BOOKBOT ============")
     print("Analyzing book found at books/frankenstein.txt...")
     print("----------- Word Count ----------")
@@ -20,6 +21,7 @@ def main():
     print("--------- Character Count -------")
     print(character_dict)
     print("============= END ===============")
+
 
 
 main()
