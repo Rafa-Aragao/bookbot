@@ -11,10 +11,15 @@ def num_characters(book_string):
         else:
             if i.lower() in characters_count:
                 characters_dict[i.lower()] += 1
-            else:
+            elif i.isalpha() == True:
                 characters_count.append(i.lower())
                 characters_dict.update([(i.lower(), 1)])
                 
     return characters_dict
+
+def sort_dict(character_dictionary):
+    sorted_keys = sorted(character_dictionary.items())
+    sorted_dict = dict(sorted_keys)
+    return sorted_dict
 
 
