@@ -17,10 +17,9 @@ def num_characters(book_string):
                 
     return characters_dict
 def sort_on(keys):
-    return("nums")
+    return keys["num"]
 
 def sort_dict(character_dictionary):
-    placeholder = None
     items = character_dictionary.items()
     sorted_dictionary = []
     for i in items:
@@ -28,10 +27,8 @@ def sort_dict(character_dictionary):
                    "num" : i[1]
                    }
         sorted_dictionary.append(listing)
-        
-
+    sorted_dictionary.sort(key=sort_on, reverse=True)    
     return sorted_dictionary
 
 
         
-
