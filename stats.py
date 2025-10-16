@@ -30,5 +30,11 @@ def sort_dict(character_dictionary):
     sorted_dictionary.sort(key=sort_on, reverse=True)    
     return sorted_dictionary
 
+def count_total(character_dict):
+    total = 0
+    for i in character_dict:
+        total += i["num"]
+    return total
+
 
         

@@ -1,6 +1,7 @@
 from stats import count_words
 from stats import num_characters
 from stats import sort_dict
+from stats import count_total
 import sys
 
 def get_book_text(filepath):
@@ -18,6 +19,7 @@ def main():
     Word_count = count_words(Frankenstein)
     character_count = num_characters(Frankenstein)
     character_dict = sort_dict(character_count)
+    total_characters = count_total(character_dict)
     
     
     print("============ BOOKBOT ============")
@@ -27,6 +29,7 @@ def main():
     print("--------- Character Count -------")
     for i in character_dict:
         print(f"{i["char"]}: {i["num"]}")
+    print(f"Total character count = {total_characters}")
     print("============= END ===============")
 
 
